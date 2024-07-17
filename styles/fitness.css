@@ -16,7 +16,7 @@ body{
     margin: 5rem auto;
 }
 .header{
-    background-color: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17)70%,rgba(136, 134, 134, 0) 100%);
 }
 
 /* nav bar style starts here */
@@ -60,7 +60,55 @@ body{
     font-style: italic;
 }
 /* navbar style end here */
+ /* banner section style start here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 167px;
+}
 
+ .banner-title{
+    font-size:4.8rem ;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    line-height: 100px;
+ }
+ #shape{
+    font-family: "miama" , sansherif;
+    font-size: 8rem;
+    font-weight: 400;
+ }
+ .banner-head{
+    gap: 28px ;
+    width: 100%;
+ }
+ .banner-headings p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+ }
+ .banner-btn{
+    display: flex;
+    gap: 14px ;
+ }
+ .banner-head button {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius:2.6rem;
+    background-color: transparent;
+    padding: 16px 40px 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+   
+ }
+ #btn-1{
+    background: rgb(230, 83, 60);
+    border: none;
+ }
+ .banner-img{
+    position: relative;
+    width: 50%;
+ }
 /* responsive part */
 @media screen and (max-width: 576px) {
     .nav-options{
@@ -68,5 +116,16 @@ body{
     }
     .menu{
         display: block;
+    }
+    .banner{
+        flex-direction: column;
+      border: 1px solid red;
+      height: fit-content;
+    }
+    .banner-head p{
+        margin-bottom:30px ;     
+    }
+    .banner-title{
+        font-size: 3rem;
     }
 }

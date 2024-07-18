@@ -101,7 +101,7 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
-   
+   cursor: pointer;
  }
  #btn-1{
     background: rgb(230, 83, 60);
@@ -209,15 +209,52 @@ body{
 
  /* Run section style start here */
  .run-extra{
-    height: auto;
+    height: 400px;
     padding: 30px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 165px;
+    padding: 40px;
  }
-
-
-
-
+ .run-headings{
+    width: 50%;
+ }
+ 
+ .run-headings h1{
+    font-size: 3rem ;
+font-weight: 900;
+color: rgb(255, 255, 255);
+margin-bottom: 20px;
+ }
+ .run-headings p{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+ }
+ .run-headings button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2.625rem;
+    background: rgb(230, 83, 60);
+    padding: 15px;
+   
+    width: 224px;
+ }
+ .run-extra-img {
+    width: 50%        ;
+ }
+.run-extra-img img{
+    width: 100%;
+   height: 371px;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 
@@ -286,4 +323,27 @@ body{
     .Habit-ball-container{
         grid-template-columns: 1fr;
     }
+    .run-extra{
+        height: 500px;
+       
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+       width: calc(100% - 100px );
+       margin: 0 25px 0 25px;
+    }
+    .run-extra-img img{
+        left: -65px;
+        position: relative;
+        width: 287px;
+        height: 170px;
+    }
+    .run-headings{
+        width: 90%;  
+    }
+    .run-headings button {
+        width: 100%;
+    }
+
 }

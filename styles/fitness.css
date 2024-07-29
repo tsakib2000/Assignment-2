@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
-
+/* shareds style */
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +12,15 @@ body{
     background:#000000;
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: 5rem auto;
 }
 .header{
     background: linear-gradient(180.00deg, rgb(32, 32, 32),rgba(228, 225, 225, 0) 100%);
     margin-top: -5rem;
+}
+.flex{
+    display: flex;
 }
 
 /* nav bar style starts here */
@@ -147,6 +150,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
  }
  .card-content h5{
     color: rgb(250, 250, 249);
@@ -219,9 +223,9 @@ body{
     gap: 165px;
     padding: 40px;
  }
- .run-headings{
+ /* .run-headings{
     width: 50%;
- }
+ } */
  
  .run-headings h1{
     font-size: 3rem ;
@@ -242,32 +246,151 @@ margin-bottom: 20px;
     border-radius: 2.625rem;
     background: rgb(230, 83, 60);
     padding: 15px;
-   
     width: 224px;
+    cursor: pointer;
  }
- .run-extra-img {
+ /* .run-extra-img {
     width: 50%        ;
- }
+ } */
 .run-extra-img img{
     width: 100%;
    height: 371px;
     border-radius: 1.25rem;
-    object-fit: cover;
-    object-position: center;
+    object-fit: none;
+    object-position: 66% 33%;
+}
+ /* Run section style end here    */
+
+/* BMI calculator style here */
+
+.bmi-head{
+    height: 120px;
+    margin: 0 auto;
+}
+.bmi-head h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
 }
 
+.bmi-head p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
 
+.bmi-chart-calculator{
+    width: 100%;
+    background: rgb(34, 34, 34);
+   height: auto;
+}
+.chart-calculator{
+    padding: 52px 0px ;
 
+}
+.chart h1{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 900; 
+    margin-bottom: 52px;
+}
+ table,tr,th,td{
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    
+ }
 
+ tr,th,td{
+    padding: 20px;
+ }
 
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
 
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.chart-calculator{
+    justify-content: space-between;
+}
+.calculator{
+    width: 577px;
+    display: flex;
+    flex-direction: column;
 
+}
+input,select{
+    width: 50%;
+}
+.factor select{
+    width: 100%;
+    padding-right: 10px;
+}
 
+input, select{
+    background-color: transparent;
+    /* margin: 20px; */
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding:20px;
+    text-align:start;
+    
+}
+.form div{
+    gap: 10px;
+    margin: 10px;
+}
+ #height
+{
+    width: 59%;
+ }
+.calculator-heading{
+    margin-left: 13px;
+}
+#calculate{
+    border: none;
+    border-radius:2.6rem;
+    width: 224px;
+    padding: 16px 40px 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 83, 60);
+   cursor: pointer;
+   margin-left: 9px;
+   margin-top: 34px;
+}
+.calculator-heading h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.calculator-heading p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+}
 
-
-
-
-
+select{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;  
+}
 
 
 
@@ -334,16 +457,25 @@ margin-bottom: 20px;
        margin: 0 25px 0 25px;
     }
     .run-extra-img img{
-        left: -65px;
-        position: relative;
-        width: 287px;
-        height: 170px;
+        height: auto;
+        object-fit: cover;
     }
     .run-headings{
         width: 90%;  
     }
     .run-headings button {
         width: 100%;
+    }
+    .chart-calculator{
+        flex-direction: column;
+    }
+    .chart{
+        position: relative;
+        left: 10px;
+    }
+    .bmi-head{
+        text-align: left;
+        margin: 20px 0px 20px 10px ;
     }
 
 }

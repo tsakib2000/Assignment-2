@@ -266,6 +266,7 @@ margin-bottom: 20px;
 .bmi-head{
     height: 120px;
     margin: 0 auto;
+   
 }
 .bmi-head h1{
     color: rgb(255, 255, 255);
@@ -391,7 +392,60 @@ select{
     font-size: 1rem;
     font-weight: 400;  
 }
+/* calculator part end here */
+.team-card-container{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: fit-content;
+    height: max-content;
+    margin: 0 auto;
+    align-items: center;
+    
+    padding: 20px 20px 0px 20px;
+}
+.card-img{
+    /* padding: 20px 20px 0px 20px; */
+}
+.card-img img{
+    width: 326.67px;
+    height: 272px;
+    border-radius: 18px   ;
+    opacity: 0.7;
+}
+.card-title{
+    position: relative;
+    bottom: 75px;
+    left: 29px;
+}
+.meet-our-team-head{
+    margin: o auto;
+    text-align: center;
+    margin-bottom: 78px;
+}
+.meet-our-team-head h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.meet-our-team-head p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .85rem;
+    font-weight: 400;
+}
+.card-title h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
 
+.card-title p{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.2rem;
+}
 
 
 /* responsive part */
@@ -477,5 +531,27 @@ select{
         text-align: left;
         margin: 20px 0px 20px 10px ;
     }
-
+    .calculator{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .team-card-container{
+        grid-template-columns: 1fr;
+    }
+    #img-2{
+        order: 1;
+    }
+    #img-5{
+        order: 2;
+    }
+    #img-1{
+        order: 3;
+    }
+    #img-6{
+        order: 4;
+    }
+    #img-3,
+    #img-4{
+        display: none;
+    }
 }

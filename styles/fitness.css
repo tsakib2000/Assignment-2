@@ -343,7 +343,12 @@ input, select{
     background: rgba(255, 255, 255, 0.1);
     padding:20px;
     text-align:start;
+    outline-color:1px solid rgba(128, 128, 128, 0.8);
+
     
+}
+select{
+border-right: 20px solid transparent;
 }
 .form div{
     gap: 10px;
@@ -446,7 +451,7 @@ select{
     color: rgba(255, 255, 255, 0.4);
     font-size: 1.2rem;
 }
-
+/* footer section start here  */
 .footer-section{ 
     background: rgba(255, 255, 255, 0.1);
 
@@ -496,7 +501,7 @@ height: 95px;
 }
 .rights-section p{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
@@ -606,5 +611,9 @@ height: 95px;
     #img-3,
     #img-4{
         display: none;
+    }
+    .footer-heading-container {
+        flex-direction: column;
+        gap: 30px;
     }
 }

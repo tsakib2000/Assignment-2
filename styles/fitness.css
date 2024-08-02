@@ -412,9 +412,7 @@ select{
     
     padding: 20px 20px 0px 20px;
 }
-.card-img{
-    /* padding: 20px 20px 0px 20px; */
-}
+
 .card-img img{
     width: 326.67px;
     height: 272px;
@@ -506,6 +504,61 @@ height: 95px;
     line-height: 24px;
     letter-spacing: 0.3px;
 }
+/* right section end here  */
+/* membership section start here  */
+.membership-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.membership-card{
+   width: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    padding:30px;
+    border-radius: 10px;
+}
+.membership-card h1 {
+    font-size:2.25rem ;
+    padding-bottom: 15px;
+    border-bottom:1px solid #fff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.membership-card h5{
+    font-size: 2rem;
+    font-weight: 500 ;
+    margin-bottom: 5px;
+}
+.membership-card p {
+    color: rgba(250, 250, 249, 0.692);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+li{
+    color: rgba(250, 250, 249, 0.692);
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-size: .85rem;
+    margin-left: -1.5em;
+}
+
+.membership-btn{
+    width: 100%;
+    padding: 17px;
+    background-color: rgb(230, 83, 60) ;
+    border: none;
+    cursor: pointer;
+}
+#standard{
+    background-color: rgb(230, 83, 60);
+}
+#btn-standard{
+    background-color: #000000;
+}
+
+
+
 /* responsive part */
 @media screen and (max-width: 576px) {
     header{
@@ -615,5 +668,10 @@ height: 95px;
     .footer-heading-container {
         flex-direction: column;
         gap: 30px;
+    }
+    .membership-card-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
     }
 }

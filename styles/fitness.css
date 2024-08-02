@@ -642,6 +642,9 @@ li{
         text-align: left;
         margin: 20px 0px 20px 10px ;
     }
+    .bmi-head p{
+     font-size: 1rem;   
+    }
     .calculator{
         margin-top: 20px;
         width: 100%;
@@ -658,7 +661,7 @@ li{
     #img-1{
         order: 3;
     }
-    #img-6{
+    #img-6{ 
         order: 4;
     }
     #img-3,
@@ -672,5 +675,12 @@ li{
     .membership-card-container{
         grid-template-columns: 1fr;
         margin-left: 32px;
+    }
+    .Habit-heading p{
+        font-size: 1rem;
+    }
+    .meet-our-team-head p{
+        margin-top: 10px;
+        font-size: 1rem;
     }
 }

@@ -512,7 +512,7 @@ height: 95px;
     grid-gap: 20px;
 }
 .membership-card{
-   width: fit-content;
+   width: 300px;
     background: rgba(255, 255, 255, 0.1);
     padding:30px;
     border-radius: 10px;
@@ -671,7 +671,6 @@ li{
     }
     .membership-card-container{
         grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
+        margin-left: 32px;
     }
 }

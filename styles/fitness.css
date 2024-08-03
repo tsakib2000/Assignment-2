@@ -262,7 +262,7 @@ margin-bottom: 20px;
  /* Run section style end here    */
 
 /* BMI calculator style here */
-
+.bmi-section{}
 .bmi-head{
     height: 120px;
     margin: 0 auto;
@@ -282,13 +282,12 @@ margin-bottom: 20px;
 }
 
 .bmi-chart-calculator{
-    width: 100%;
-    background: rgb(34, 34, 34);
+   
    height: auto;
 }
 .chart-calculator{
     padding: 52px 0px ;
-
+    background: rgb(34, 34, 34);
 }
 .chart h1{
     color: rgb(255, 255, 255);
@@ -626,7 +625,7 @@ li{
         object-fit: cover;
     }
     .run-headings{
-        width: 90%;  
+        width: 80%;  
     }
     .run-headings button {
         width: 100%;
@@ -635,19 +634,19 @@ li{
         flex-direction: column;
     }
     .chart{
-        position: relative;
-        left: 10px;
+        margin-left: 10px;
     }
     .bmi-head{
         text-align: left;
-        margin: 20px 0px 20px 10px ;
+       
+        /* margin: 20px 0px 20px 10px ; */
     }
     .bmi-head p{
      font-size: 1rem;   
     }
     .calculator{
         margin-top: 20px;
-        width: 100%;
+        width: 90%;
     }
     .team-card-container{
         grid-template-columns: 1fr;
@@ -683,4 +682,7 @@ li{
         margin-top: 10px;
         font-size: 1rem;
     }
+    /* .bmi-chart-calculator{
+       width:100vw;  
+    } */
 }

@@ -282,12 +282,13 @@ margin-bottom: 20px;
 }
 
 .bmi-chart-calculator{
-   
+    width: 100%;
+    background: rgb(34, 34, 34);
    height: auto;
 }
 .chart-calculator{
     padding: 52px 0px ;
-    background: rgb(34, 34, 34);
+   
 }
 .chart h1{
     color: rgb(255, 255, 255);
